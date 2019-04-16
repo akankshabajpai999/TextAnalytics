@@ -1,7 +1,5 @@
-# Unit 5 - Twitter
+# Twitter
 
-
-# VIDEO 5
 
 # Read in the data
 
@@ -61,10 +59,6 @@ corpus = tm_map(corpus, stemDocument)
 corpus[[1]]$content
 
 
-
-
-# Video 6
-
 # Create matrix
 
 frequencies = DocumentTermMatrix(corpus)
@@ -106,10 +100,6 @@ split = sample.split(tweetsSparse$Negative, SplitRatio = 0.7)
 
 trainSparse = subset(tweetsSparse, split==TRUE)
 testSparse = subset(tweetsSparse, split==FALSE)
-
-
-
-# Video 7
 
 # Build a CART model
 
